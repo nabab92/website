@@ -33,7 +33,7 @@
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -46,7 +46,7 @@
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
                 <ul class="nav navbar-nav">
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                     <li class="hidden">
@@ -70,15 +70,15 @@
 
     <!-- Intro Section -->
     <section id="intro" class="intro-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>HI THERE, WE ARE DIGITALCUM</h1>
-                    <p>A PASSIONATE WEB DESIGN COMPANY</p>
-                    <a class="btn btn-default page-scroll" href="#about">Click Me to Scroll Down!</a>
+      <!-- Full Width Image Header -->
+        <header class="header-image">
+            <div class="headline">
+                <div class="container">
+                    <h1>Hi There, We are DC</h1>
+                    <h2>A Passonate Web Design Company</h2>
                 </div>
             </div>
-        </div>
+        </header>
     </section>
 
     <!-- About Section -->
@@ -115,15 +115,7 @@
     </section>
 
 
-    <!-- Full Width Image Header -->
-    <header class="header-image">
-        <div class="headline">
-            <div class="container">
-                <h1>One Page Wonder</h1>
-                <h2>Will Knock Your Socks Off</h2>
-            </div>
-        </div>
-    </header>
+  
      <!-- Page Content -->
     <div class="container">
 
@@ -131,7 +123,7 @@
 
         <!-- First Featurette -->
         <div class="featurette" id="about">
-            <img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/500x500">
+            <img class="featurette-image img-circle img-responsive pull-right" src="images/web-design.jpg">
             <h2 class="featurette-heading">This First Heading
                 <span class="text-muted">Will Catch Your Eye</span>
             </h2>
@@ -142,7 +134,7 @@
 
         <!-- Second Featurette -->
         <div class="featurette" id="services">
-            <img class="featurette-image img-circle img-responsive pull-left" src="http://placehold.it/500x500">
+            <img class="featurette-image img-circle img-responsive pull-left" src="images/pexels-photo-160107.jpeg">
             <h2 class="featurette-heading">The Second Heading
                 <span class="text-muted">Is Pretty Cool Too.</span>
             </h2>
@@ -153,7 +145,7 @@
 
         <!-- Third Featurette -->
         <div class="featurette" id="contact">
-            <img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/500x500">
+            <img class="featurette-image img-circle img-responsive pull-right" src="images/telecom.jpg">
             <h2 class="featurette-heading">The Third Heading
                 <span class="text-muted">Will Seal the Deal.</span>
             </h2>
@@ -166,7 +158,7 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
+                    <p>Copyright &copy; Digitalcum 2017</p>
                 </div>
             </div>
         </footer>

@@ -4,11 +4,13 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
+
 .header-image {
+    padding: 150px 0;
     display: block;
     width: 100%;
     text-align: center;
-    background: url('http://placehold.it/1900x500') no-repeat center center scroll;
+    background: url('/images/pexels-photo-115655.jpeg') no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -19,16 +21,20 @@
     padding: 120px 0;
 }
 
+.headline h1, h2 {
+    text-transform: uppercase;
+}
 .headline h1 {
-    font-size: 130px;
+    font-size: 100px;
     background: #fff;
     background: rgba(255,255,255,0.9);
 }
 
 .headline h2 {
-    font-size: 77px;
+    font-size: 50px;
     background: #fff;
     background: rgba(255,255,255,0.9);
+    letter-spacing: .5rem;
 }
 
 .featurette-divider {
