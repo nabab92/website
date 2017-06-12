@@ -44,6 +44,16 @@
 .featurette {
     overflow: hidden;
 }
+.featurette img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-border-radius: 99em;
+  -moz-border-radius: 99em;
+  border-radius: 99em;
+  border: 5px solid #eee;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3); 
+}
 
 .featurette-image.pull-left {
     margin-right: 40px;
@@ -179,6 +189,15 @@ footer {
     }
 }
 
+.navbar-header .logo-text-illusion {
+    width: 86px;
+    animation: type 1s steps(28), blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+}
+
 .headline  .text-illusion h1 {
     width: 19ch;
     animation: type 1s steps(19), blink 0.5s step-end infinite alternate;
@@ -286,5 +305,61 @@ footer {
 
     to {
         opacity: 1;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.columns {
+    float: left;
+    width: 33.3%;
+    padding: 8px;
+}
+
+.price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price .header {
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+}
+
+.price li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+}
+
+.price .grey {
+    background-color: #eee;
+    font-size: 20px;
+}
+
+.button {
+    background-color: #3097D1;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+    .columns {
+        width: 100%;
     }
 }

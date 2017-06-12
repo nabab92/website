@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -42,7 +41,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">WebApp</a>
+                <a class="navbar-brand page-scroll" href="#page-top"><span class="logo-text-illusion">Digitalcum</span></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -56,7 +55,7 @@
                         <a class="page-scroll" href="#services">Services</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="page-scroll" href="#pricing">Pricing</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -91,7 +90,7 @@
                 <h2 class="featurette-heading">Design
                     <span class="text-muted">&nbsp;</span>
                 </h2>
-                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                <p class="lead">With our expertise in pixel perfect design we help create eye catching visual brands for clients. From creating Logos, to full fledged websites we deliver amazing designs to match brands, whether new or existing.</p>
             </div>
 
             <hr class="featurette-divider">
@@ -102,7 +101,7 @@
                 <h2 class="featurette-heading">Develop
                     <span class="text-muted">&nbsp;</span>
                 </h2>
-                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                <p class="lead">We develop web and mobile applications with our vast knowledge of programming skills. We pay attention to your applications security and keep a tight lid on each project. Even when we're gone maintenance is a breeze.</p>
             </div>
 
             <hr class="featurette-divider">
@@ -113,33 +112,114 @@
                 <h2 class="featurette-heading">Deploy
                     <span class="text-muted">&nbsp;</span>
                 </h2>
-                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                <p class="lead">Design and Development would mean nothing if we can't deploy what we've worked for. With our optimized infrastructure we can deploy your site in a heartbeat. Yes, we'll take care of everything from registration to hosting.</p>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
+    <hr>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section ">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Contact Section</h1>
+                    <h1>Pricing</h1>
+                    <br/></br>
+                    <div class="columns">
+                      <ul class="price">
+                        <li class="header">Basic</li>
+                        <li class="grey">&#8377; 5,000 / website</li>
+                        <li>Single Website</li>
+                        <li>Website Hostnig Support</li>
+                        <li>Limited Page</li>
+                        <li>Limited Technical Support</li>
+                        <li class="grey"><a href="#" class="button">Sign Up</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="columns">
+                      <ul class="price">
+                        <li class="header" style="background-color:#3097D1">Pro</li>
+                        <li class="grey">&#8377; 15,000 / website</li>
+                        <li>Single Website</li>
+                        <li>Website Hostnig Support</li>
+                        <li>Limited Page &amp; Little Customization</li>
+                        <li>Technical Support</li>
+                        <li class="grey"><a href="#" class="button">Sign Up</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="columns">
+                      <ul class="price">
+                        <li class="header">Premium</li>
+                        <li class="grey">&#8377; 30,000 / website</li>
+                        <li>Signgle Website</li>
+                        <li>Website Hosting Support</li>
+                        <li>Fully Customized</li>
+                        <li>Full Technical and others Support</li>
+                        <li class="grey"><a href="#" class="button">Sign Up</a></li>
+                      </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+  <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Contact Us</h2>
+                    <h3 class="section-subheading text-muted">Want to start a project or just say hi...</h3>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Your Email *" id="email" required">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="Your Message *" id="message" required></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
+                                <div id="success"></div>
+                                <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
 
-
+    <hr>
   
-     <!-- Page Content -->
+  <!-- Footer -->
     <div class="container">
-
-
-        <!-- Footer -->
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Digitalcum 2017</p>
+                    <p>Copyright &copy; 2017 Digitalcum. All rights reserved.</p>
                 </div>
             </div>
         </footer>
