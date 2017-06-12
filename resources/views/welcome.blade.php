@@ -178,26 +178,52 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <form name="sentMessage" id="contactForm" novalidate>
+                    @if (count($errors) > 0)
+                        <div class="alert alert-danger" style="text-align: left;">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+
+                    <form name="sentMessage" id="contactForm" method="POST" action="{{ url('/contact') }}" novalidate>
+                        {{ csrf_field() }}
                         <div class="row">
                             <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required>
-                                    <p class="help-block text-danger"></p>
+                                <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
+                                    <input type="text" 
+                                           class="form-control" 
+                                           placeholder="Your Name *" 
+                                           id="name" name="name" 
+                                           value="{{ old('name') }}" 
+                                           required>
                                 </div>
-                                <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Your Email *" id="email" required">
-                                    <p class="help-block text-danger"></p>
+                                <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
+                                    <input type="email" 
+                                           class="form-control" 
+                                           placeholder="Your Email *" 
+                                           id="email" name="email" 
+                                           value="{{ old('email') }}" 
+                                           required>
                                 </div>
-                                <div class="form-group">
-                                    <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required">
-                                    <p class="help-block text-danger"></p>
+                                <div class="form-group{{ $errors->has('phone') ? ' has-error' : '' }}">
+                                    <input type="tel" 
+                                           class="form-control" 
+                                           placeholder="Your Phone *" 
+                                           id="phone" name="phone" 
+                                           value="{{ old('phone') }}" 
+                                           required>
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="form-group">
-                                    <textarea class="form-control" placeholder="Your Message *" id="message" required></textarea>
-                                    <p class="help-block text-danger"></p>
+                                <div class="form-group{{ $errors->has('message') ? ' has-error' : '' }}">
+                                    <textarea class="form-control" 
+                                              placeholder="Your Message *" 
+                                              id="message" 
+                                              name="message" 
+                                              required>{{ old('message') }}</textarea>
                                 </div>
                             </div>
                             <div class="clearfix"></div>
@@ -207,6 +233,12 @@
                             </div>
                         </div>
                     </form>
+                    <br/>
+                    @if (session('flash'))
+                        <div class="alert alert-success">
+                            {{ session('flash') }}
+                        </div>
+                    @endif
                 </div>
             </div>
         </div>

@@ -11,8 +11,12 @@
 |
 */
 
+Route::post('/contact', 'PagesController@sendContactMail');
+
 Route::get('/', function () {
+
     return view('welcome');
+    
 });
 
 Auth::routes();
