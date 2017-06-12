@@ -33,7 +33,7 @@
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <nav id="navMain" class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -52,11 +52,11 @@
                     <li class="hidden">
                         <a class="page-scroll" href="#page-top"></a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
+                   <li>
+                        <a class="page-scroll" href="#services">Services</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Services</a>
+                        <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -74,31 +74,46 @@
         <header class="header-image">
             <div class="headline">
                 <div class="container">
-                    <h1>Hi There, We are DC</h1>
-                    <h2>A Passonate Web Design Company</h2>
+                    <h1 class="fadeIn wait-1s">Hi There, We are DC</h1>
+                    <h2 class="fadeIn wait-2s">A Passonate Web Design Company</h2>
                 </div>
             </div>
         </header>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>About Section</h1>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Services Section -->
     <section id="services" class="services-section">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Services Section</h1>
-                </div>
+
+            <!-- First Featurette -->
+            <div class="featurette">
+                <img class="featurette-image img-circle img-responsive pull-right" src="images/web-design.jpg">
+                <h2 class="featurette-heading">Design
+                    <span class="text-muted">&nbsp;</span>
+                </h2>
+                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <!-- Second Featurette -->
+            <div class="featurette">
+                <img class="featurette-image img-circle img-responsive pull-left" src="images/pexels-photo-160107.jpeg">
+                <h2 class="featurette-heading">Develop
+                    <span class="text-muted">&nbsp;</span>
+                </h2>
+                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <!-- Third Featurette -->
+            <div class="featurette">
+                <img class="featurette-image img-circle img-responsive pull-right" src="images/telecom.jpg">
+                <h2 class="featurette-heading">Deploy
+                    <span class="text-muted">&nbsp;</span>
+                </h2>
+                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
             </div>
         </div>
     </section>
@@ -119,40 +134,6 @@
      <!-- Page Content -->
     <div class="container">
 
-        <hr class="featurette-divider">
-
-        <!-- First Featurette -->
-        <div class="featurette" id="about">
-            <img class="featurette-image img-circle img-responsive pull-right" src="images/web-design.jpg">
-            <h2 class="featurette-heading">This First Heading
-                <span class="text-muted">Will Catch Your Eye</span>
-            </h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <!-- Second Featurette -->
-        <div class="featurette" id="services">
-            <img class="featurette-image img-circle img-responsive pull-left" src="images/pexels-photo-160107.jpeg">
-            <h2 class="featurette-heading">The Second Heading
-                <span class="text-muted">Is Pretty Cool Too.</span>
-            </h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <!-- Third Featurette -->
-        <div class="featurette" id="contact">
-            <img class="featurette-image img-circle img-responsive pull-right" src="images/telecom.jpg">
-            <h2 class="featurette-heading">The Third Heading
-                <span class="text-muted">Will Seal the Deal.</span>
-            </h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-
-        <hr class="featurette-divider">
 
         <!-- Footer -->
         <footer>
@@ -172,6 +153,16 @@
     <!-- Scrolling Nav JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
+    <script type="text/javascript">
+        $(function(){ 
+             var navMain = $(".navbar-collapse"); // avoid dependency on #id
+             // "a:not([data-toggle])" - to avoid issues caused
+             // when you have dropdown inside navbar
+             navMain.on("click", "a:not([data-toggle])", null, function () {
+                 navMain.collapse('hide');
+             });
+         });
+    </script>
 
 </body>
 

@@ -24,8 +24,19 @@ html {
 
 .navbar-custom .navbar-toggle {
     color: #fff;
-    background-color: rgba(255, 255, 255, .2);
-    font-size: 12px
+    background-color: #000;
+    font-size: 12px;
+    border: 1px solid rgba(255, 255, 255, .2);
+}
+.navbar-custom  .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.navbar-custom .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
 }
 
 .navbar-custom .nav li a {
@@ -120,10 +131,10 @@ of those sections to manage the look and feel of the site. */
 }
 
 .services-section {
-    height: 100%;
     padding-top: 150px;
     text-align: center;
     background: #fff;
+    padding-bottom: 80px;
 }
 
 .contact-section {
